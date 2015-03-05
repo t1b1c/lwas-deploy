@@ -1,6 +1,8 @@
 # lwas-deploy
 blue theme web application powered by lwas
 
+get it [here](https://github.com/t1b1c/lwas-deploy/archive/master.zip)
+
 ## Prerequisites
 1. IIS 6 or later
 2. ASP.NET 2.0, .NET Framework 3.5
