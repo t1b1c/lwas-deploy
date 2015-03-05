@@ -40,7 +40,6 @@ get it [here](https://github.com/t1b1c/lwas-deploy/archive/master.zip)
   3. In `/App_Data/config/connections.xml` edit the `string` attribute accordingly to point to your database using the configured login
 
 ## Deployment
-It's time to deploy your application screens.
 Open `/App_Data/config/routes.xml` . By default `lwas-deploy` contains an empty `routes.xml` and should have been replaced after folder preparation.
 The `routes.xml` file defines your menu structure. If your menu differs from the structure bellow then it has been customized and you should follow the steps bellow under **Customizations and extensions** upon comepletion of **Deployment**.
 
@@ -85,11 +84,19 @@ That structure is mirrored in `routes.xml` as
 </routes>
 ```
 
-Please note how the `<route name="Ecrane">` reflects the folder `/Ecrane`, `<route name="Rapoarte">` reflects the folder `/Rapoarte` and so on.
+Notice how 
+- `<route name="Ecrane">` reflects the folder `/Ecrane`, 
+- `<route name="Rapoarte">` reflects the folder `/Rapoarte` 
+- and so on.
+
 All leaf nodes in the `routes.xml` are xml files in `zip from developer/portfolio/` so what you have to do is to copy them according to the `routes.xml` in the related folder in your IIS website or application root. 
 
-_E.g.: `<screen name="some screen" />` defines the file `/zip from developer/portfolio/some screen.xml` which should go to `/Ecrane/` folder_.
-
+E.g.: 
+```
+the screen            zip from developer/portfolio/some screen.xml
+is routed by          <screen name="some screen" />
+and should go to      /Ecrane/some screen.xml
+```
 ## Customizations and extensions
 Often your application differs from standard either with a customized menu or with a calendar extensions.
 Please note this are most frequent differencies, some other might be in place. Consult your lwas developer about this.
@@ -97,9 +104,9 @@ Please note this are most frequent differencies, some other might be in place. C
 ### Customized menu 
 You have a customized menu whenever your menu structure differs from `Ecrane` and `Rapoarte`. In this case you have few more steps to follow:
 
-1. ask your developer for the customized `/menu/dropdownmenu.ascx` and place the files he gives into `/menu/` folder overwritting the existing ones
+1. ask your developer for the customized `/menu/dropdownmenu.ascx` and place the files he gives into `/menu` folder overwritting the existing ones
 2. for every missing folder definition in `routes.xml` copy-rename the original `/Ecrane` folder (that is without any *.xml file in it)
-3. deploy de corresponding screens to those folders as instructed in **Deployment**
+3. deploy the corresponding screens to those folders as instructed in **Deployment**
  
 ### Calendar extension
 If you have a calendar screen in your application that screen is a lwas extension and is not contained in `lwas-deploy`.
