@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<roles>
+  <role name="devs atest">
+    <user name="admin" />
+  </role>
+</roles>

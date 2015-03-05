@@ -1,0 +1,139 @@
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+<%@ Register Assembly="LWAS" Namespace="LWAS.Infrastructure" TagPrefix="LWASI" %>
+<%@ Register Assembly="LWAS" Namespace="LWAS.WebParts" TagPrefix="LWASWP" %>
+<%@ Register Assembly="LWAS" Namespace="LWAS.CustomControls" TagPrefix="LWASCC" %>
+<%@ Register Assembly="LWAS" Namespace="LWAS.CustomControls.DataControls" TagPrefix="LWASCCDC" %>
+<%@ Register Assembly="LWAS" Namespace="LWAS.WebParts.Zones" TagPrefix="LWASWPZ" %>
+<%@ Register Assembly="LWAS.Developer" Namespace="LWAS.Developer" TagPrefix="dev" %>
+<%@ Register Assembly="LWAS.Developer" Namespace="LWAS.Developer.AccessControl" TagPrefix="devac" %>
+<%@ Register Assembly="LWAS.Developer" Namespace="LWAS.Developer.Translation" TagPrefix="devt" %>
+
+<ajax:DropDownExtender runat="server" HighlightBackColor="#4d90fe" HighlightBorderColor="#4d90fe" />
+<ajax:AsyncFileUpload runat="server" Width="100px" /> 
+
+<asp:Login runat="server" Font-Size="14px">
+    <TitleTextStyle BackColor="#4d90fe" Font-Bold="True" ForeColor="White" />
+    <InstructionTextStyle Font-Italic="True" />
+    <LabelStyle Width="150px" HorizontalAlign="Center" />
+    <TextBoxStyle Font-Size="14px" />
+    <LoginButtonStyle BackColor="#D1480E" BorderColor="#e6e6e6" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" Font-Size="14px" Width="150px" Height="50px" />
+    <FailureTextStyle ForeColor="#ff4808" />
+</asp:Login>
+
+<asp:EditorZone runat="server" BackColor="#FFFFFF" BorderColor="#FFFFFF" BorderWidth="1px">
+    <HeaderStyle BackColor="#1395F0" Font-Bold="True" ForeColor="#000" />
+    <LabelStyle ForeColor="#000" />
+    <HeaderVerbStyle Font-Bold="False" Font-Underline="False" ForeColor="#000" />
+    <PartChromeStyle BorderColor="#FFFFFF" BorderStyle="Solid" BorderWidth="1px" />
+    <PartStyle BorderColor="#FFFFFF" BorderWidth="5px" />
+    <FooterStyle BackColor="#FFFFFF" HorizontalAlign="Right" />
+    <EditUIStyle ForeColor="#000" />
+    <InstructionTextStyle ForeColor="#000" />
+    <ErrorStyle />
+    <VerbStyle ForeColor="#000" />
+    <EmptyZoneTextStyle ForeColor="#000" />
+    <PartTitleStyle Font-Bold="True" ForeColor="#000" />
+</asp:EditorZone>
+
+<asp:FormView runat="server" CellPadding="4" ForeColor="#000" EmptyDataText="no data">
+    <EditRowStyle BackColor="#FFFFFF" wrap="false" />
+</asp:FormView>
+
+<LWASCCDC:Selector runat="server" SearchText="Search" OkText="Close" CancelText="Cancel" />
+<LWASCC:DataGridView runat="server" CellPadding="4" CellSpacing="4" ForeColor="#000" GridLines="None" EmptyDataText="no records">
+    <RowStyle BackColor="White" />
+    <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#000" />
+    <HeaderStyle BackColor="#88c2f7" Font-Bold="False" ForeColor="black" />
+    <AlternatingRowStyle BackColor="#e6e6e6" />
+</LWASCC:DataGridView>
+<LWASCC:StyledTextBox runat="server">
+    <NormalStyle BackColor="White" />
+    <ReadOnlyStyle BackColor="#f7f7f7" />
+</LWASCC:StyledTextBox>
+<LWASCC:DateTextBox runat="server" HasTime="false">
+    <NormalStyle BackColor="White" />
+    <ReadOnlyStyle BackColor="#f7f7f7" />
+    <Info LongDatePattern="dd/MM/yyyy HH:mm:ss" ShortDatePattern="dd/MM/yyyy" />
+</LWASCC:DateTextBox>
+<LWASCC:MaskedCalendar runat="server">
+    <NormalStyle BackColor="White" />
+    <ReadOnlyStyle BackColor="#f7f7f7" />
+</LWASCC:MaskedCalendar>
+<LWASCC:NumberTextBox runat="server" Format="N2" PercentFormat="P2" style="text-align:right">
+    <NormalStyle BackColor="White" />
+    <ReadOnlyStyle BackColor="#f7f7f7" />
+</LWASCC:NumberTextBox>
+<LWASCC:Paginater runat="server" PageSize="10">
+    <ButtonStyle BackColor="green">
+        <Font Size="8px" />
+    </ButtonStyle>
+</LWASCC:Paginater>
+<LWASCC:PopupText runat="server" OkText="OK" CancelText="Cancel" />
+
+<LWASWP:FormViewWebPart runat="server">
+    <InvalidItemStyle BorderStyle="Solid" BorderColor="#ff4808" BorderWidth="5px" />
+    <MessageStyle ForeColor="#ff4808">
+        <Font Bold="True" />
+    </MessageStyle>
+</LWASWP:FormViewWebPart>
+<LWASWP:GridViewWebPart runat="server">
+    <FilterRowStyle BackColor="#88c2f7" Font-Bold="True" ForeColor="White" />
+    <HeaderRowStyle BackColor="#88c2f7" Font-Bold="True" ForeColor="Black" Height="30px" CssClass="underline" />
+    <FooterRowStyle BackColor="#88c2f7" Font-Bold="True" ForeColor="White" />
+    <GroupRowStyle BackColor="#e6e6e6" />
+    <RowStyle BackColor="#FFFFFF" />
+    <EditRowStyle BorderColor="#7FFF00" BorderWidth="2px" BackColor="#D1DDF1" />
+    <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#000" Height="45px" />
+    <AlternatingRowStyle BackColor="#e6e6e6" />
+    <InvalidItemStyle BorderStyle="Solid" BorderColor="#ff4808" BorderWidth="5px" />
+    <MessageStyle ForeColor="#ff4808">
+        <Font Bold="True" />
+    </MessageStyle>
+</LWASWP:GridViewWebPart>
+
+<LWASWPZ:CustomChromeZone runat="server" BorderColor="#FFFFFF" EmptyZoneText="This zone is empty">
+    <PartChromeStyle BackColor="#FFFFFF" BorderColor="#FFFFFF" ForeColor="#000" />
+    <EmptyZoneTextStyle />
+    <MenuLabelStyle ForeColor="White" />
+    <HeaderStyle BackColor="#1395F0" Font-Bold="True" ForeColor="White" Height="20px" Width="800px" />
+    <MenuVerbStyle BorderColor="#1395F0" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" />
+    <PartStyle ForeColor="#000" BorderStyle="Solid" BorderColor="#e6e6e6" BorderWidth="1px" />
+    <TitleBarVerbStyle Font-Underline="False" ForeColor="White" />
+    <PartTitleStyle BackColor="#e6e6e6" Font-Bold="True" ForeColor="White" />
+</LWASWPZ:CustomChromeZone>
+<LWASWPZ:TableZone runat="server" BorderColor="#FFFFFF" EmptyZoneText="This zone is empty">
+    <PartChromeStyle BackColor="#FFFFFF" BorderColor="#FFFFFF" ForeColor="#000" />
+    <EmptyZoneTextStyle />
+    <MenuLabelStyle ForeColor="White" />
+    <HeaderStyle BackColor="#1395F0" Font-Bold="True" ForeColor="White" Height="20px" Width="800px" />
+    <MenuVerbStyle BorderColor="#1395F0" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" />
+    <PartStyle ForeColor="#000" BorderStyle="Solid" BorderColor="#e6e6e6" BorderWidth="1px" />
+    <TitleBarVerbStyle Font-Underline="False" ForeColor="White" />
+    <PartTitleStyle BackColor="#e6e6e6" Font-Bold="True" ForeColor="#000" CssClass="part_title"  />
+
+    <TableStyle BackColor="#FFFFFF" BorderStyle="None" ForeColor="#FFFFFF" />
+    <CellStyle VerticalAlign="Top" />
+</LWASWPZ:TableZone>
+<LWASWPZ:TabZone runat="server" BorderColor="#FFFFFF" EmptyZoneText="This zone is empty">
+    <PartChromeStyle BackColor="#FFFFFF" BorderColor="#FFFFFF" ForeColor="#000" />
+    <EmptyZoneTextStyle />
+    <MenuLabelStyle ForeColor="White" />
+    <HeaderStyle BackColor="#1395F0" Font-Bold="True" ForeColor="White" Height="20px" Width="800px" />
+    <MenuVerbStyle BorderColor="#1395F0" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" />
+    <PartStyle ForeColor="#000" BorderStyle="Solid" BorderColor="#e6e6e6" BorderWidth="1px" />
+    <TitleBarVerbStyle Font-Underline="False" ForeColor="White" />
+    <PartTitleStyle BackColor="#e6e6e6" Font-Bold="True" ForeColor="#000" CssClass="part_title" />
+
+    <TableStyle BackColor="#FFFFFF" BorderStyle="None" ForeColor="#FFFFFF" />
+    <CellStyle VerticalAlign="Top" />
+</LWASWPZ:TabZone>
+
+<dev:MonitorInfoErrors runat="server">
+    <HeaderStyle Wrap="False" Width="100px" />
+    <StatusStyle Wrap="True" Width="400px" />
+    <MessageStyle ForeColor="Green" />
+    <ErrorStyle ForeColor="#ff4808" />
+</dev:MonitorInfoErrors>
+<devac:PasswordSet runat="server" OkText="Apply" CancelText="Cancel" OldPasswordText="Current password" NewPasswordText="New password" ConfirmPasswordText="Verify new password" />
+<devac:PasswordChange runat="server" OkText="Apply" CancelText="Cancel" OldPasswordText="Current password" NewPasswordText="New password" ConfirmPasswordText="Verify new password" />
+<devt:TranslationEditor runat="server" OkText="OK" CancelText="Cancel" LanguageLabel="Language" KeyLabel="Key" TextLabel="Current" TranslationLabel="Translation" />

@@ -1,0 +1,139 @@
+<%@ Import Namespace="LWAS.Infrastructure.Security" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+<%@ Register Assembly="LWAS" Namespace="LWAS.Infrastructure" TagPrefix="LWASI" %>
+<%@ Register Assembly="LWAS" Namespace="LWAS.WebParts" TagPrefix="LWASWP" %>
+<%@ Register Assembly="LWAS" Namespace="LWAS.WebParts.Zones" TagPrefix="LWASWPZ" %>
+<%@ Register Assembly="LWAS.Developer" Namespace="LWAS.Developer" TagPrefix="dev" %>
+<%@ Register Assembly="LWAS.Developer" Namespace="LWAS.Developer.AccessControl" TagPrefix="devac" %>
+<%@ Register Assembly="LWAS.Developer" Namespace="LWAS.Developer.Mail" TagPrefix="devm" %>
+<%@ Register Assembly="LWAS.Developer" Namespace="LWAS.Developer.Office" TagPrefix="devo" %>
+<%@ Register Assembly="LWAS.Developer" Namespace="LWAS.Developer.Formula" TagPrefix="devf" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server" submitdisabledcontrols="true"><% // submitdisabledcontrols=true to have readonly and disabled controls recover value on postback  %>
+    <ajax:ToolkitScriptManager id="scriptManager" runat="server" ScriptMode="Release" />
+    <LWASI:Manager ID="webPartManager" runat="server" EnableAuthorizer="false" />
+    
+    <devac:PasswordChange ID="passwordChange" runat="server" />
+
+    <div id="screen">
+
+    <div id="head">
+        <div id="mainlinknprogress">
+            <div id="mainlink">
+                <a href="<%= Page.Request.ApplicationPath %>/Default.aspx">Home</a>
+            </div>
+            <div id="progress">
+			    <asp:UpdateProgress ID="updateProgress" runat="server" DisplayAfter="10">
+				    <ProgressTemplate>
+					    <span>loading ...</span>
+				    </ProgressTemplate>
+			    </asp:UpdateProgress>
+            </div>
+        </div>
+        <div id="title">
+            <asp:ContentPlaceHolder ID="TitlePlaceholder" runat="server" />
+        </div>
+        <div id="menu">
+            <asp:Panel runat="server" ID="usermenuCurrent" class="userMenuCurrent">
+                <asp:Label runat="server" ID="menuLabel" />
+            </asp:Panel>
+            <asp:Panel runat="server" ID="usermenuPanel" style="display: none;">
+                <table class="usermenu_table">
+                    <tr>
+                        <td style="padding: 5px;">
+                            <asp:LinkButton runat="server" ID="logoutButton" ForeColor="White" Text="Logout" onclick="logoutButton_Click" />
+                        </td>
+                        <td style="padding: 5px;">
+						</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px;">
+                            <asp:LinkButton runat="server" ID="changePassword" ForeColor="White" Text="Change password" onclick="changePassword_Click" />
+                        </td>
+                        <td style="padding: 5px;">
+						</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:HyperLink runat="server" ID="usersManagementLink" ForeColor="White" Text="Users management" NavigateUrl="~/AccessControl/Users.aspx" />
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+            </asp:Panel>
+            <ajax:DropDownExtender runat="server" ID="usermenu" BehaviorID="usermenuBehaviour" TargetControlID="usermenuCurrent" DropDownControlID="usermenuPanel" />
+        </div>
+    </div>
+
+    <div id="content">
+        <asp:ContentPlaceHolder ID="aboveContent" runat="server" />
+
+		<br /><br />
+        <dev:MonitorInfoErrors ID="monitorInfoErrors" runat="server" />
+		<asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server" />
+		<asp:UpdatePanel runat="server" ID = "dummyUpdatePanel" />
+		
+        <asp:Panel ID="workspacePanel" runat="server">
+            <LWASWPZ:TableZone ID="Workspace" runat="server" RenderDivs="true" PersonalizationProviderID="personalizationProvider" WebPartVerbRenderMode="TitleBar" HeaderText="Workspace zone">
+                <ZoneTemplate>
+                    <asp:ContentPlaceHolder ID="WorkspacePlaceholder" runat="server" />
+                </ZoneTemplate>
+            </LWASWPZ:TableZone>
+            <LWASWPZ:TabZone ID="TabZone" runat="server" RenderDivs="true" PersonalizationProviderID="personalizationProvider" WebPartVerbRenderMode="TitleBar" HeaderText="Tabs zone" />
+
+        </asp:Panel>
+        
+        <asp:ContentPlaceHolder ID="FreeContent" runat="server" />
+
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <dev:PDFViewer ID="pdfViewer" runat="server" />  
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        
+        <LWASWPZ:TableZone ID="Infrastructure" runat="server" PersonalizationProviderID="personalizationProvider" WebPartVerbRenderMode="TitleBar" AllowLayoutChange="false" HeaderText="Infrastructure zone" Visible="false">
+            <ZoneTemplate>
+                <LWASWP:SqlDataBridgeWebPart ID="commander" Title="Sql DataBridge" runat="server" 
+                                ChromeType="None" AllowClose="false" AllowZoneChange="false" />
+                <LWASWP:WorkFlowManagerWebPart ID="workflowManagerWebPart" Initialization="1001" Completion="1001" Title="WorkFlow manager" runat="server" 
+                                ChromeType="None" AllowClose="false" AllowZoneChange="false"  />
+				<dev:QueryStateWebPart ID="queryStateWebPart" runat="server" Title="Query state" ChromeType="None" AllowClose="false" AllowZoneChange="false"  />
+				<devm:MailSendWebPart ID="mailSendWebPart" runat="server" Title="Send mail" ChromeType="None" AllowClose="false" AllowZoneChange="false"  />
+				<LWASWP:ContextWebPart ID="context" runat="server" Title="Context proxy" ChromeType="None" AllowClose="false" AllowZoneChange="false"  />
+                <devo:DocxGeneratorWebPart ID="docxGenerator" runat="server" Title="Generate word" ChromeType="None" AllowClose="false" AllowZoneChange="false"  />
+                <devo:ExcelDataSourceWebPart ID="excelSource" runat="server" Title="Excel source" ChromeType="None" AllowClose="false" AllowZoneChange="false"  />
+                <dev:SourceWalkerWebPart ID="sourceWalker" runat="server" Title="Source walker" ChromeType="None" AllowClose="false" AllowZoneChange="false"  />
+			    <LWASWP:ViewsWebPart ID="viewsWebPart" runat="server" Title="Views" ChromeType="None" AllowClose="false" AllowZoneChange="false"  />
+				<devo:ExcelGeneratorWebPart ID="excelGenerator" runat="server" Title="Excel generator" ChromeType="None" AllowClose="false" AllowZoneChange="false"  />
+                <devf:FormulaEvaluatorWebPart ID="formulaEvaluator" runat="server" Title="Formula evaluator" ChromeType="None" AllowClose="false" AllowZoneChange="false"  />
+            </ZoneTemplate>
+        </LWASWPZ:TableZone>
+    
+        <asp:WebPartZone ID="Providers" runat="server" Visible="false">
+            <ZoneTemplate>
+                <LWASWPZ:TableZonePersonalizationProvider runat="server" ID="personalizationProvider" Title="Personalization provider" />
+                <asp:ContentPlaceholder ID="ProvidersContent" runat="server" />
+            </ZoneTemplate>
+        </asp:WebPartZone>
+    
+        <asp:ContentPlaceHolder ID="bellowContent" runat="server" />
+    </div>
+
+    </div>
+    
+    </form>
+
+    <asp:ContentPlaceHolder ID="BeforeEndBody" runat="server" />
+
+</body>
+</html>
+

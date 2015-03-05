@@ -1,0 +1,590 @@
+﻿/*
+ * Copyright 2015 Tiberiu Craciun, tiberiu.craciun@gmail.com
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+*/
+
+/* general rules */
+html, body
+{
+	height: 100%;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	/*overflow: hidden;  */
+	font-family: arial, sans-serif;
+    font-size: 90%;
+    background-color:#ffffff;
+}
+a
+{
+    color: #0066cc;
+    text-decoration: underline;
+}
+a:hover
+{
+    color: #0066cc;
+    text-decoration: none;
+}
+a:visited
+{
+    color: #0066cc;
+    text-decoration: underline;
+}
+input, select, textarea /* for DropDown check .dropDown_enabled bellow */
+{
+    border: 1px solid #353534;
+    background-color: #ffffff;
+    color: #000;
+    padding: 2px 5px 2px 5px;   
+}
+input[readonly], select[disabled], textarea[readonly] /* for DropDown check .dropDown_disabled bellow */
+{
+    border: 1px solid #e6e6e6;
+    background-color: transparent !important;
+    color: inherit;
+    
+}
+input[type="checkbox"]
+{
+    border: none;
+}
+input[type="button"]
+{
+    border: 1px solid #e6e6e6;
+    background-color: #ffffcc;
+	padding: 2px 5px 2px 5px;
+}
+input[type="button"]:hover
+{
+    background-color: #D1480E;
+    color: White;
+}
+input[type="button"]:active
+{
+    background-color: #D1480E;
+    color: White;
+}
+div
+{
+	margin: 0;
+}
+table
+{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+}
+td
+{
+	margin: 0;
+	padding: 2px 2px 2px 2px;
+}
+span.wide
+{
+	line-height: 30px;
+}
+span.center
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* login rules */
+div#loginPanel
+{
+  width: 500px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+/* master page rules */
+div#screen
+{
+    width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div#head
+{
+    width:100%;
+    height: 40px;
+    background-color:#4d90fe;
+    color: white;
+}
+div#mainlinknprogress
+{
+    width:15%;
+    min-width:150px;
+    float:left;
+    padding-top: 10px;
+}
+div#mainlink
+{
+    float:left;
+    padding-left: 5px;
+}
+div#mainlink a
+{
+    color: white;
+}
+div#progress
+{
+    float:right;
+}
+div#title
+{
+    width:65%;
+    min-width:500px;
+    float:left;    
+    text-align:center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+div#menu
+{
+    width:15%;
+    min-width:150px;
+    float:right;
+    overflow:hidden;
+    padding-top: 10px;
+}
+div#content
+{
+    /*width: 900px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* masked calendar rules */
+.masked_calendar_date
+{
+    width: 11ch;
+}
+.masked_calendar_time
+{
+    width: 6ch;
+}
+
+/* monitor info rules */
+.mie
+{
+}
+.mie_message
+{
+    color: Green;
+}
+.mie_error
+{
+    color: Red;
+}
+.mie_error ul
+{
+    list-style-type: none;
+}
+.mie_message_title
+{
+    display: block;
+}
+.mie_error_title
+{
+}
+.mie_translation_menu
+{
+    color: White;
+	background-color: #507CD1;
+	margin: 2px;
+	padding: 10px;
+}
+.mie_translation_menu a
+{
+    color: White;
+}
+/* parts theme rules */
+.part_title
+{
+    padding: 5px 5px 5px 5px;
+    vertical-align: middle;
+}
+/*menu rules*/
+.usermenu_table
+{
+    margin-top: 20px;
+	background-color: #4d90fe;
+}
+.usermenu_table a
+{
+    display: block;
+    padding: 5px 5px 5px 5px;
+}
+.usermenu_table a:hover
+{
+    background-color: #fff;
+    color: #507CD1 !important;
+}
+.menuContainer
+{
+	border: solid 1px #e6e6e6;
+	height: 450px;
+}
+.menuContainer ul 
+{
+	list-style-position: outside;
+	list-style-image: url(images/expandmenu.gif);
+	list-style-type: none;
+}
+.menuContainer ul li
+{
+	padding: 5px 0px 5px 0px;
+}
+.bottomMenuContainer
+{
+	background-color: rgb(230, 230, 230);
+	margin-top: 5px;
+	padding-left: 10px;
+	border: solid 1px #e6e6e6;
+	height: 160px;
+}
+.miscMenu
+{
+	float: left;
+	margin: 0px 10px 0px 10px;
+	list-style-position: outside;
+	list-style-image: url(images/expandmenu.gif);
+	list-style-type: none;
+
+}
+.miscMenu li
+{
+	padding: 5px 0px 5px 0px;
+}
+.mainMenuHead
+{
+	background-color: #4d90fe;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 5px 5px 5px;
+	color: white;
+	float: left;
+	width: 100px;
+}
+.mainMenu
+{
+	list-style: none;
+	background-color: #4d90fe;
+	margin-top: 2px;
+	margin: 0;
+	padding: 0;
+	padding-top: 5px;
+}
+.mainMenu ul
+{
+	list-style-position: outside;
+	list-style-image: url(images/expandmenu.gif);
+	list-style-type: none;
+}
+.mainMenu li
+{
+	padding: 5px 10px 5px 10px;
+}
+.mainMenu a
+{
+	color: white;
+    display: block;
+    padding: 5px 5px 5px 5px;
+}
+.mainMenu a:hover
+{
+    background-color: #fff;
+    color: #507CD1 !important;
+}
+
+/*calendar class rules*/
+.calendar_linksPanel
+{
+}
+.calendar_activitate
+{
+    width: 100%;
+    background-color: #fbe047;
+    margin-top: 1px;
+}
+.calendar_activitate a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+/* paginater rules */
+.paginater_first
+{
+    width: 16px;
+    height: 17px;
+    border: none;
+    background-image: url('images/first.jpg');
+}
+.paginater_last
+{
+    width: 16px;
+    height: 17px;
+    border: none;
+    background-image: url('images/last.jpg');
+}
+.paginater_left
+{
+    width: 16px;
+    height: 17px;
+    border: none;
+    background-image: url('images/left.jpg');
+}
+.paginater_right
+{
+    width: 16px;
+    height: 17px;
+    border: none;
+    background-image: url('images/right.jpg');
+}
+
+/* miscellaneous class rules */
+.clearfix::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.userMenuCurrent
+{
+    text-align: center;
+}
+.hidden
+{
+	display: none;
+}
+.dropDown_enabled
+{    
+    border: 1px solid #353534;
+    background-color: #ffffff;
+    color: #000;
+    
+}
+.dropDown_disabled
+{    
+    border: 1px solid #e6e6e6;
+    background-color: #f7f7f7;
+    color: #000;
+    
+}
+.linkButton_readonly
+{
+    text-decoration: underline;
+}
+
+.underline
+{
+	border-style: none none solid none;
+	border-width: 1px;
+	border-color: #000;
+}
+.underline-double
+{
+	border-style: none none solid none;
+	border-width: 4px;
+	border-color: #000;
+}
+.report_view input[type="button"]
+{
+    border: none;
+    background-color: white;
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+/* selector rules */
+.selector_modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+.selector_modalPopup {
+	background-color:White;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width: 650px;
+	height: 400px;
+}
+.selector_title
+{
+	width: 100%;
+	height: 20px;
+	font-size: 14px;
+	text-align: center;
+	background-color: #4d90fe;
+	color: White;
+	display: block;
+}
+.selector_searchpanel
+{
+    width: 650px;
+	height: 350px;
+	overflow: auto;
+}
+.selector_criteriaPanel
+{
+    float: left;
+}
+.selector_criteria
+{
+	width: 575px;
+}
+.selector_searchButtonPanel
+{
+    margin-right: 2px;
+}
+.selector_searchButtonPanel input
+{
+    width: 70px;
+    height: 40px;
+	background-color: #D1480E;
+	color: #fff;
+}
+.selector_results
+{
+	float: left;
+}
+.selector_results div table
+{
+}
+.selector_buttonspanel
+{
+	padding-top: 10px;
+}
+.selector_buttonspanel input
+{
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+    border: 1px solid #e6e6e6;
+	background-color: #4d90fe;
+	color: #fff;
+	width: 70px;
+	height: 30px;
+}
+
+/* popup rules */
+.popup_modalBackground
+{
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+.popup_modalPopup
+{
+	background-color:White;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width: 650px;
+	height: 400px;
+}
+.popup_topTable
+{
+}
+.popup_OKButton
+{
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+	background-color: #ffffaa;
+	width: 70px;
+	height: 30px;
+}
+.popup_CancelButton
+{
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+	background-color: #ffffaa;
+	width: 70px;
+	height: 30px;
+}
+
+/* zone extender rules */
+.normal
+{
+    border: solid 3px white;
+}
+.highlight
+{
+    border: solid 3px red;
+}
+.active
+{
+    border: solid 3px green;
+}
+.tableLabel
+{
+    position:relative;
+    display: block;
+    background-color: Purple;
+    width: 30px;
+    height: 15px;
+    cursor: pointer;
+}
+.rowLabel
+{
+    position:relative;
+    display: block;
+    background-color: Lime;
+    width: 15px;
+    height: 30px;
+    margin: 1px 1px 1px 1px;
+    cursor: pointer;
+}
+.cellLabel
+{
+    position:relative;
+    display: block;
+    background-color: Orange;
+    width: 30px;
+    height: 15px;
+    cursor: pointer;
+}
+.cell
+{
+    vertical-align: top;
+    cursor: crosshair;
+}
+.newRowLabel
+{
+    position:relative;
+    display: block;
+    background-color: Lime;
+    width: 15px;
+    height: 30px;
+    margin: 1px 1px 1px 1px;
+    cursor: pointer;
+    filter: Alpha(Opacity=100, FinishOpacity=0, Style=1, StartX=0, StartY=0, FinishX=580, FinishY=0);
+}
+.newCellLabel
+{
+    position:relative;
+    display: block;
+    background-color: Orange;
+    width: 30px;
+    height: 15px;
+    cursor: pointer;
+    filter: Alpha(Opacity=100, FinishOpacity=0, Style=1, StartX=0, StartY=0, FinishX=580, FinishY=0);
+}

@@ -1,0 +1,1553 @@
+<?xml version="1.0" encoding="utf-16"?>
+<personalization readOnly="true" version="0.6.0.0">
+  <part id="webPartManager">
+    <property name="WebPartStateUser" sensitive="false" scope="0">
+      <value type="System.Object[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <ArrayOfAnyType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <anyType xsi:type="xsd:string">applicationForm</anyType>
+          <anyType xsi:type="xsd:string">ContentZone</anyType>
+          <anyType xsi:type="xsd:int">0</anyType>
+          <anyType xsi:type="xsd:boolean">false</anyType>
+          <anyType xsi:type="xsd:string">applicationSelector</anyType>
+          <anyType xsi:type="xsd:string">ContentZone</anyType>
+          <anyType xsi:type="xsd:int">1</anyType>
+          <anyType xsi:type="xsd:boolean">false</anyType>
+          <anyType xsi:type="xsd:string">usersGrid</anyType>
+          <anyType xsi:type="xsd:string">ContentZone</anyType>
+          <anyType xsi:type="xsd:int">2</anyType>
+          <anyType xsi:type="xsd:boolean">false</anyType>
+          <anyType xsi:type="xsd:string">personalizationProvider</anyType>
+          <anyType xsi:type="xsd:string">Providers</anyType>
+          <anyType xsi:type="xsd:int">0</anyType>
+          <anyType xsi:type="xsd:boolean">false</anyType>
+          <anyType xsi:type="xsd:string">applicationSource</anyType>
+          <anyType xsi:type="xsd:string">Providers</anyType>
+          <anyType xsi:type="xsd:int">1</anyType>
+          <anyType xsi:type="xsd:boolean">false</anyType>
+          <anyType xsi:type="xsd:string">usersDataSource</anyType>
+          <anyType xsi:type="xsd:string">Providers</anyType>
+          <anyType xsi:type="xsd:int">2</anyType>
+          <anyType xsi:type="xsd:boolean">false</anyType>
+          <anyType xsi:type="xsd:string">workflowManager</anyType>
+          <anyType xsi:type="xsd:string">Providers</anyType>
+          <anyType xsi:type="xsd:int">3</anyType>
+          <anyType xsi:type="xsd:boolean">false</anyType>
+        </ArrayOfAnyType>
+      </value>
+    </property>
+  </part>
+  <part id="applicationForm">
+    <property name="Width" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.Unit, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      </value>
+    </property>
+    <property name="Description" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="ExportMode" sensitive="false" scope="1">
+      <value type="System.Web.UI.WebControls.WebParts.WebPartExportMode, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <WebPartExportMode>None</WebPartExportMode>
+      </value>
+    </property>
+    <property name="Hidden" sensitive="false" scope="0">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="AllowClose" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="AllowMinimize" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="HelpMode" sensitive="false" scope="1">
+      <value type="System.Web.UI.WebControls.WebParts.WebPartHelpMode, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <WebPartHelpMode>Navigate</WebPartHelpMode>
+      </value>
+    </property>
+    <property name="ImportErrorMessage" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string>Cannot import this Web Part.</string>
+      </value>
+    </property>
+    <property name="HelpUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="AllowEdit" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="Configuration" sensitive="false" scope="0">
+      <value type="LWAS.Infrastructure.Configuration.Configuration, LWAS">
+        <Configuration configKey="">
+          <sections>
+            <section configKey="Properties">
+              <elements />
+            </section>
+            <section configKey="Template">
+              <elements>
+                <element configKey="selectors">
+                  <attributes />
+                  <elements>
+                    <element configKey="row1">
+                      <attributes />
+                      <elements>
+                        <element configKey="applicationSelector">
+                          <attributes>
+                            <attribute configKey="proxy" value="applicationSelector" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="proxyMember" value="Selector" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements />
+                        </element>
+                      </elements>
+                    </element>
+                  </elements>
+                </element>
+                <element configKey="row1">
+                  <attributes />
+                  <elements>
+                    <element configKey="ApplicationLabel">
+                      <attributes>
+                        <attribute configKey="type" value="Label" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                      </attributes>
+                      <elements>
+                        <element configKey="TextProperty">
+                          <attributes>
+                            <attribute configKey="member" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="value" value="Users of" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements />
+                        </element>
+                      </elements>
+                    </element>
+                    <element configKey="row1_spacer1">
+                      <attributes>
+                        <attribute configKey="type" value="Label" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                      </attributes>
+                      <elements>
+                        <element configKey="TextProperty">
+                          <attributes>
+                            <attribute configKey="member" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="value" value="" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements />
+                        </element>
+                        <element configKey="WidthProperty">
+                          <attributes>
+                            <attribute configKey="member" value="Width" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="value" value="10px" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements />
+                        </element>
+                      </elements>
+                    </element>
+                    <element configKey="ApplicationName">
+                      <attributes>
+                        <attribute configKey="type" value="Label" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                      </attributes>
+                      <elements>
+                        <element configKey="TextProperty">
+                          <attributes>
+                            <attribute configKey="member" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="pull" value="Application" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="push" value="Application" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements />
+                        </element>
+                      </elements>
+                    </element>
+                  </elements>
+                </element>
+              </elements>
+            </section>
+          </sections>
+        </Configuration>
+      </value>
+    </property>
+    <property name="Direction" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.ContentDirection, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <ContentDirection>NotSet</ContentDirection>
+      </value>
+    </property>
+    <property name="AllowHide" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="AuthorizationFilter" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="TitleIconImageUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="Title" sensitive="false" scope="0">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string>Application</string>
+      </value>
+    </property>
+    <property name="AllowConnect" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="CatalogIconImageUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="TitleUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="ChromeState" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.WebParts.PartChromeState, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <PartChromeState>Normal</PartChromeState>
+      </value>
+    </property>
+    <property name="Height" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.Unit, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      </value>
+    </property>
+    <property name="AllowZoneChange" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="ChromeType" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.WebParts.PartChromeType, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <PartChromeType>Default</PartChromeType>
+      </value>
+    </property>
+  </part>
+  <part id="applicationSelector">
+    <property name="Width" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.Unit, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      </value>
+    </property>
+    <property name="CatalogIconImageUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="Description" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="ExportMode" sensitive="false" scope="1">
+      <value type="System.Web.UI.WebControls.WebParts.WebPartExportMode, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <WebPartExportMode>None</WebPartExportMode>
+      </value>
+    </property>
+    <property name="Hidden" sensitive="false" scope="0">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="AllowClose" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="HelpMode" sensitive="false" scope="1">
+      <value type="System.Web.UI.WebControls.WebParts.WebPartHelpMode, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <WebPartHelpMode>Navigate</WebPartHelpMode>
+      </value>
+    </property>
+    <property name="ImportErrorMessage" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string>Cannot import this Web Part.</string>
+      </value>
+    </property>
+    <property name="HelpUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="AllowEdit" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="Configuration" sensitive="false" scope="0">
+      <value type="LWAS.Infrastructure.Configuration.Configuration, LWAS">
+        <Configuration configKey="">
+          <sections>
+            <section configKey="SelectorProperties">
+              <elements>
+                <element configKey="TitleProperty">
+                  <attributes>
+                    <attribute configKey="name" value="Title" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                    <attribute configKey="value" value="Search an application" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                  </attributes>
+                  <elements />
+                </element>
+                <element configKey="Link.Text">
+                  <attributes>
+                    <attribute configKey="name" value="Link.Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                    <attribute configKey="value" value="Search" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                  </attributes>
+                  <elements />
+                </element>
+                <element configKey="Results.AutoGenerateColumnsProperty">
+                  <attributes>
+                    <attribute configKey="name" value="Results.AutoGenerateColumns" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                    <attribute configKey="value" value="False" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                  </attributes>
+                  <elements />
+                </element>
+              </elements>
+            </section>
+            <section configKey="CriteriaFields">
+              <elements />
+            </section>
+            <section configKey="ResultsFields">
+              <elements>
+                <element configKey="ApplicationNameColumn">
+                  <attributes>
+                    <attribute configKey="type" value="Label" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                    <attribute configKey="DataMember" value="Name" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                    <attribute configKey="HeaderText" value="Application" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                  </attributes>
+                  <elements />
+                </element>
+              </elements>
+            </section>
+          </sections>
+        </Configuration>
+      </value>
+    </property>
+    <property name="Direction" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.ContentDirection, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <ContentDirection>NotSet</ContentDirection>
+      </value>
+    </property>
+    <property name="AllowHide" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="AuthorizationFilter" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="TitleIconImageUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="Title" sensitive="false" scope="0">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string>Application selector</string>
+      </value>
+    </property>
+    <property name="AllowConnect" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="AllowMinimize" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="TitleUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="ChromeState" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.WebParts.PartChromeState, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <PartChromeState>Normal</PartChromeState>
+      </value>
+    </property>
+    <property name="Height" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.Unit, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      </value>
+    </property>
+    <property name="AllowZoneChange" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="ChromeType" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.WebParts.PartChromeType, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <PartChromeType>Default</PartChromeType>
+      </value>
+    </property>
+  </part>
+  <part id="usersGrid">
+    <property name="Width" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.Unit, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      </value>
+    </property>
+    <property name="Description" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="ExportMode" sensitive="false" scope="1">
+      <value type="System.Web.UI.WebControls.WebParts.WebPartExportMode, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <WebPartExportMode>None</WebPartExportMode>
+      </value>
+    </property>
+    <property name="Hidden" sensitive="false" scope="0">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="AllowClose" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="AllowMinimize" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="HelpMode" sensitive="false" scope="1">
+      <value type="System.Web.UI.WebControls.WebParts.WebPartHelpMode, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <WebPartHelpMode>Navigate</WebPartHelpMode>
+      </value>
+    </property>
+    <property name="ImportErrorMessage" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string>Cannot import this Web Part.</string>
+      </value>
+    </property>
+    <property name="HelpUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="AllowEdit" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="Configuration" sensitive="false" scope="0">
+      <value type="LWAS.Infrastructure.Configuration.Configuration, LWAS">
+        <Configuration configKey="">
+          <sections>
+            <section configKey="Properties">
+              <elements>
+                <element configKey="FilterProperty">
+                  <attributes>
+                    <attribute configKey="name" value="Filter" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                    <attribute configKey="value" value="Name" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                  </attributes>
+                  <elements />
+                </element>
+              </elements>
+            </section>
+            <section configKey="Template">
+              <elements>
+                <element configKey="commanders">
+                  <attributes />
+                  <elements>
+                    <element configKey="row1">
+                      <attributes />
+                      <elements>
+                        <element configKey="viewer">
+                          <attributes>
+                            <attribute configKey="type" value="Commander" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="command" value="view" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements>
+                            <element configKey="TextProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="View" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                            <element configKey="WidthProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Width" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="70px" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                          </elements>
+                        </element>
+                        <element configKey="inserter">
+                          <attributes>
+                            <attribute configKey="type" value="Commander" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="command" value="insert" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements>
+                            <element configKey="TextProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="Insert" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                            <element configKey="WidthProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Width" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="70px" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                          </elements>
+                        </element>
+                        <element configKey="editor">
+                          <attributes>
+                            <attribute configKey="type" value="Commander" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="command" value="edit" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements>
+                            <element configKey="TextProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="Edit" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                            <element configKey="WidthProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Width" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="70px" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                          </elements>
+                        </element>
+                        <element configKey="deleter">
+                          <attributes>
+                            <attribute configKey="type" value="Commander" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="command" value="delete" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements>
+                            <element configKey="TextProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="Delete" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                            <element configKey="WidthProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Width" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="70px" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                          </elements>
+                        </element>
+                        <element configKey="saver">
+                          <attributes>
+                            <attribute configKey="type" value="Commander" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="command" value="save" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements>
+                            <element configKey="TextProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="Save" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                            <element configKey="WidthProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Width" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="75px" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                          </elements>
+                        </element>
+                        <element configKey="reseter">
+                          <attributes>
+                            <attribute configKey="type" value="Commander" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="command" value="reset" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements>
+                            <element configKey="TextProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="Reset" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                            <element configKey="WidthProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Width" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="75px" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                          </elements>
+                        </element>
+                      </elements>
+                    </element>
+                  </elements>
+                </element>
+                <element configKey="filter">
+                  <attributes />
+                  <elements>
+                    <element configKey="row1">
+                      <attributes>
+                        <attribute configKey="span" value="1" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                      </attributes>
+                      <elements>
+                        <element configKey="filter_empty1">
+                          <attributes>
+                            <attribute configKey="type" value="Label" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements>
+                            <element configKey="TextProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="Filter" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                            <element configKey="WidthProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Width" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="50px" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                          </elements>
+                        </element>
+                        <element configKey="Name">
+                          <attributes>
+                            <attribute configKey="type" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements>
+                            <element configKey="TextProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="pull" value="Name" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="push" value="Name" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                            <element configKey="WidthProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Width" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="250px" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                          </elements>
+                        </element>
+                      </elements>
+                    </element>
+                  </elements>
+                </element>
+                <element configKey="header">
+                  <attributes />
+                  <elements>
+                    <element configKey="row1">
+                      <attributes />
+                      <elements>
+                        <element configKey="empty1">
+                          <attributes>
+                            <attribute configKey="type" value="Label" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements>
+                            <element configKey="TextProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                            <element configKey="WidthProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Width" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="50px" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                          </elements>
+                        </element>
+                        <element configKey="NameLabel">
+                          <attributes>
+                            <attribute configKey="type" value="Label" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements>
+                            <element configKey="TextProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="Name" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                            <element configKey="WidthProperty">
+                              <attributes>
+                                <attribute configKey="member" value="Width" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="value" value="250px" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                          </elements>
+                        </element>
+                      </elements>
+                    </element>
+                  </elements>
+                </element>
+                <element configKey="row_keys">
+                  <attributes>
+                    <attribute configKey="display" value="none" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                  </attributes>
+                  <elements>
+                    <element configKey="Key">
+                      <attributes>
+                        <attribute configKey="type" value="Hidden" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                      </attributes>
+                      <elements>
+                        <element configKey="ValueProperty">
+                          <attributes>
+                            <attribute configKey="member" value="Value" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="pull" value="Key" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="push" value="Key" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements />
+                        </element>
+                      </elements>
+                    </element>
+                  </elements>
+                </element>
+                <element configKey="row1">
+                  <attributes />
+                  <elements>
+                    <element configKey="row_selector">
+                      <attributes>
+                        <attribute configKey="type" value="Commander" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                        <attribute configKey="command" value="select" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                      </attributes>
+                      <elements>
+                        <element configKey="TextProperty">
+                          <attributes>
+                            <attribute configKey="member" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="value" value="Activ" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements />
+                        </element>
+                        <element configKey="WidthProperty">
+                          <attributes>
+                            <attribute configKey="member" value="Width" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="value" value="50px" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements />
+                        </element>
+                      </elements>
+                    </element>
+                    <element configKey="Name">
+                      <attributes>
+                        <attribute configKey="type" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                      </attributes>
+                      <elements>
+                        <element configKey="TextProperty">
+                          <attributes>
+                            <attribute configKey="member" value="Text" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="pull" value="Name" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="push" value="Name" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements />
+                        </element>
+                        <element configKey="WidthProperty">
+                          <attributes>
+                            <attribute configKey="member" value="Width" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="value" value="250px" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements />
+                        </element>
+                      </elements>
+                    </element>
+                  </elements>
+                </element>
+              </elements>
+            </section>
+            <section configKey="Validation">
+              <elements>
+                <element configKey="NameValidation">
+                  <attributes>
+                    <attribute configKey="member" value="Name" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                  </attributes>
+                  <elements>
+                    <element configKey="requiredValidation">
+                      <attributes>
+                        <attribute configKey="handlerKey" value="required" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                      </attributes>
+                      <elements />
+                    </element>
+                  </elements>
+                </element>
+              </elements>
+            </section>
+            <section configKey="Checks">
+              <elements>
+              </elements>
+            </section>
+          </sections>
+        </Configuration>
+      </value>
+    </property>
+    <property name="Direction" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.ContentDirection, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <ContentDirection>NotSet</ContentDirection>
+      </value>
+    </property>
+    <property name="AllowHide" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="AuthorizationFilter" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="TitleIconImageUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="Title" sensitive="false" scope="0">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string>Users</string>
+      </value>
+    </property>
+    <property name="AllowConnect" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="CatalogIconImageUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="TitleUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="ChromeState" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.WebParts.PartChromeState, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <PartChromeState>Normal</PartChromeState>
+      </value>
+    </property>
+    <property name="Height" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.Unit, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      </value>
+    </property>
+    <property name="AllowZoneChange" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="ChromeType" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.WebParts.PartChromeType, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <PartChromeType>Default</PartChromeType>
+      </value>
+    </property>
+  </part>
+  <part id="personalizationProvider">
+    <property name="Width" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.Unit, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      </value>
+    </property>
+    <property name="Description" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="ExportMode" sensitive="false" scope="1">
+      <value type="System.Web.UI.WebControls.WebParts.WebPartExportMode, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <WebPartExportMode>None</WebPartExportMode>
+      </value>
+    </property>
+    <property name="Hidden" sensitive="false" scope="0">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="AllowClose" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="AllowMinimize" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="HelpMode" sensitive="false" scope="1">
+      <value type="System.Web.UI.WebControls.WebParts.WebPartHelpMode, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <WebPartHelpMode>Navigate</WebPartHelpMode>
+      </value>
+    </property>
+    <property name="ImportErrorMessage" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string>Cannot import this Web Part.</string>
+      </value>
+    </property>
+    <property name="HelpUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="AllowEdit" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="Configuration" sensitive="false" scope="0">
+      <value type="LWAS.Infrastructure.Configuration.Configuration, LWAS">
+        <Configuration configKey="">
+          <sections>
+            <section configKey="ContentZone">
+              <elements>
+                <element configKey="0">
+                  <attributes />
+                  <elements>
+                    <element configKey="0">
+                      <attributes>
+                        <attribute configKey="span" value="2" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                        <attribute configKey="part" value="applicationForm" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                      </attributes>
+                      <elements />
+                    </element>
+                  </elements>
+                </element>
+                <element configKey="1">
+                  <attributes />
+                  <elements>
+                    <element configKey="0">
+                      <attributes>
+                        <attribute configKey="span" value="1" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                        <attribute configKey="part" value="usersGrid" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                      </attributes>
+                      <elements />
+                    </element>
+                  </elements>
+                </element>
+              </elements>
+            </section>
+          </sections>
+        </Configuration>
+      </value>
+    </property>
+    <property name="Direction" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.ContentDirection, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <ContentDirection>NotSet</ContentDirection>
+      </value>
+    </property>
+    <property name="AllowHide" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="AuthorizationFilter" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="TitleIconImageUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="Title" sensitive="false" scope="0">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string>Personalization provider</string>
+      </value>
+    </property>
+    <property name="AllowConnect" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="CatalogIconImageUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="TitleUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="ChromeState" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.WebParts.PartChromeState, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <PartChromeState>Normal</PartChromeState>
+      </value>
+    </property>
+    <property name="Height" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.Unit, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      </value>
+    </property>
+    <property name="AllowZoneChange" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="ChromeType" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.WebParts.PartChromeType, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <PartChromeType>Default</PartChromeType>
+      </value>
+    </property>
+  </part>
+  <part id="applicationSource">
+    <property name="Width" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.Unit, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      </value>
+    </property>
+    <property name="Description" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="ExportMode" sensitive="false" scope="1">
+      <value type="System.Web.UI.WebControls.WebParts.WebPartExportMode, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <WebPartExportMode>None</WebPartExportMode>
+      </value>
+    </property>
+    <property name="Hidden" sensitive="false" scope="0">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="AllowClose" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="AllowMinimize" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="HelpMode" sensitive="false" scope="1">
+      <value type="System.Web.UI.WebControls.WebParts.WebPartHelpMode, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <WebPartHelpMode>Navigate</WebPartHelpMode>
+      </value>
+    </property>
+    <property name="ImportErrorMessage" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string>Cannot import this Web Part.</string>
+      </value>
+    </property>
+    <property name="HelpUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="AllowEdit" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="Configuration" sensitive="false" scope="0">
+      <value type="LWAS.Infrastructure.Configuration.Configuration, LWAS">
+        <Configuration configKey="">
+          <sections />
+        </Configuration>
+      </value>
+    </property>
+    <property name="Direction" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.ContentDirection, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <ContentDirection>NotSet</ContentDirection>
+      </value>
+    </property>
+    <property name="AllowHide" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="AuthorizationFilter" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="TitleIconImageUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="Title" sensitive="false" scope="0">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string>Application source</string>
+      </value>
+    </property>
+    <property name="AllowConnect" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="CatalogIconImageUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="TitleUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="ChromeState" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.WebParts.PartChromeState, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <PartChromeState>Normal</PartChromeState>
+      </value>
+    </property>
+    <property name="Height" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.Unit, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      </value>
+    </property>
+    <property name="AllowZoneChange" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="ChromeType" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.WebParts.PartChromeType, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <PartChromeType>Default</PartChromeType>
+      </value>
+    </property>
+  </part>
+  <part id="usersDataSource">
+    <property name="Width" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.Unit, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      </value>
+    </property>
+    <property name="Description" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="ExportMode" sensitive="false" scope="1">
+      <value type="System.Web.UI.WebControls.WebParts.WebPartExportMode, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <WebPartExportMode>All</WebPartExportMode>
+      </value>
+    </property>
+    <property name="Hidden" sensitive="false" scope="0">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="AllowClose" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="AllowMinimize" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="HelpMode" sensitive="false" scope="1">
+      <value type="System.Web.UI.WebControls.WebParts.WebPartHelpMode, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <WebPartHelpMode>Navigate</WebPartHelpMode>
+      </value>
+    </property>
+    <property name="ImportErrorMessage" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string>Cannot import this Web Part.</string>
+      </value>
+    </property>
+    <property name="HelpUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="AllowEdit" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="Configuration" sensitive="false" scope="0">
+      <value type="LWAS.Infrastructure.Configuration.Configuration, LWAS">
+        <Configuration configKey="">
+          <sections />
+        </Configuration>
+      </value>
+    </property>
+    <property name="Direction" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.ContentDirection, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <ContentDirection>NotSet</ContentDirection>
+      </value>
+    </property>
+    <property name="AllowHide" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="AuthorizationFilter" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="TitleIconImageUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="Title" sensitive="false" scope="0">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string>Users data source provider</string>
+      </value>
+    </property>
+    <property name="AllowConnect" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="CatalogIconImageUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="TitleUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="ChromeState" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.WebParts.PartChromeState, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <PartChromeState>Normal</PartChromeState>
+      </value>
+    </property>
+    <property name="Height" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.Unit, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      </value>
+    </property>
+    <property name="AllowZoneChange" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="ChromeType" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.WebParts.PartChromeType, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <PartChromeType>Default</PartChromeType>
+      </value>
+    </property>
+  </part>
+  <part id="workflowManager">
+    <property name="Width" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.Unit, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      </value>
+    </property>
+    <property name="Description" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="ExportMode" sensitive="false" scope="1">
+      <value type="System.Web.UI.WebControls.WebParts.WebPartExportMode, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <WebPartExportMode>None</WebPartExportMode>
+      </value>
+    </property>
+    <property name="Hidden" sensitive="false" scope="0">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="AllowClose" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="AllowMinimize" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="HelpMode" sensitive="false" scope="1">
+      <value type="System.Web.UI.WebControls.WebParts.WebPartHelpMode, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <WebPartHelpMode>Navigate</WebPartHelpMode>
+      </value>
+    </property>
+    <property name="ImportErrorMessage" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string>Cannot import this Web Part.</string>
+      </value>
+    </property>
+    <property name="HelpUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="AllowEdit" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="Configuration" sensitive="false" scope="0">
+      <value type="LWAS.Infrastructure.Configuration.Configuration, LWAS">
+        <Configuration configKey="">
+          <sections>
+            <section configKey="flows">
+              <elements>
+                <element configKey="set applicationSelector.Selector.SelectorSource">
+                  <attributes />
+                  <elements>
+                    <element configKey="transits">
+                      <attributes />
+                      <elements>
+                        <element configKey="1">
+                          <attributes>
+                            <attribute configKey="key" value="applicationSelector.Selector.SelectorSource=applicationSource.DataSource" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements>
+                            <element configKey="source">
+                              <attributes>
+                                <attribute configKey="id" value="applicationSource" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="member" value="DataSource" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                            <element configKey="destination">
+                              <attributes>
+                                <attribute configKey="id" value="applicationSelector" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="member" value="Selector.SelectorSource" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                          </elements>
+                        </element>
+                      </elements>
+                    </element>
+                  </elements>
+                </element>
+                <element configKey="set applicationSelector.Selector.Results.DataMember">
+                  <attributes />
+                  <elements>
+                    <element configKey="transits">
+                      <attributes />
+                      <elements>
+                        <element configKey="1">
+                          <attributes>
+                            <attribute configKey="key" value="applicationSelector.Selector.Results.DataMember=/" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements>
+                            <element configKey="source">
+                              <attributes>
+                                <attribute configKey="value" value="/" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                            <element configKey="destination">
+                              <attributes>
+                                <attribute configKey="id" value="applicationSelector" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="member" value="Selector.Results.DataMember" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                          </elements>
+                        </element>
+                      </elements>
+                    </element>
+                  </elements>
+                </element>
+                <element configKey="applicationSelector.Item">
+                  <attributes />
+                  <elements>
+                    <element configKey="conditions">
+                      <attributes />
+                      <elements>
+                        <element configKey="waitfor item">
+                          <attributes>
+                            <attribute configKey="type" value="waitfor" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="sender" value="applicationSelector" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="milestone" value="item" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements />
+                        </element>
+                      </elements>
+                    </element>
+                    <element configKey="transits">
+                      <attributes />
+                      <elements>
+                        <element configKey="1">
+                          <attributes>
+                            <attribute configKey="key" value="applicationForm.CurrentItem.Data.Application=applicationSelector.Selector.SelectedItem.Name" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements>
+                            <element configKey="source">
+                              <attributes>
+                                <attribute configKey="id" value="applicationSelector" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="member" value="Selector.SelectedItem.Name" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                            <element configKey="destination">
+                              <attributes>
+                                <attribute configKey="id" value="applicationForm" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="member" value="CurrentItem.Data.Application" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                          </elements>
+                        </element>
+                        <element configKey="2">
+                          <attributes>
+                            <attribute configKey="key" value="usersGrid.Milestone=got app" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements>
+                            <element configKey="source">
+                              <attributes>
+                                <attribute configKey="value" value="got app" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                            <element configKey="destination">
+                              <attributes>
+                                <attribute configKey="id" value="usersGrid" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="member" value="Milestone" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                          </elements>
+                        </element>
+                      </elements>
+                    </element>
+                  </elements>
+                </element>
+                <element configKey="set usersGrid.DataSource">
+                  <attributes />
+                  <elements>
+                    <element configKey="conditions">
+                      <attributes />
+                      <elements>
+                        <element configKey="waitfor usersDataSource.source">
+                          <attributes>
+                            <attribute configKey="type" value="waitfor" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="sender" value="usersDataSource" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                            <attribute configKey="milestone" value="source" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements />
+                        </element>
+                      </elements>
+                    </element>
+                    <element configKey="transits">
+                      <attributes />
+                      <elements>
+                        <element configKey="1">
+                          <attributes>
+                            <attribute configKey="key" value="usersGrid.DataSource=usersDataSource.DataSource" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                          </attributes>
+                          <elements>
+                            <element configKey="source">
+                              <attributes>
+                                <attribute configKey="id" value="usersDataSource" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="member" value="DataSource" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                            <element configKey="destination">
+                              <attributes>
+                                <attribute configKey="id" value="usersGrid" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                                <attribute configKey="member" value="DataSource" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                              </attributes>
+                              <elements />
+                            </element>
+                          </elements>
+                        </element>
+                      </elements>
+                    </element>
+                  </elements>
+                </element>
+              </elements>
+            </section>
+          </sections>
+        </Configuration>
+      </value>
+    </property>
+    <property name="Direction" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.ContentDirection, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <ContentDirection>NotSet</ContentDirection>
+      </value>
+    </property>
+    <property name="AllowHide" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="AuthorizationFilter" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="TitleIconImageUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="Title" sensitive="false" scope="0">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string>WorkFlow manager</string>
+      </value>
+    </property>
+    <property name="AllowConnect" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>true</boolean>
+      </value>
+    </property>
+    <property name="CatalogIconImageUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="TitleUrl" sensitive="false" scope="1">
+      <value type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <string />
+      </value>
+    </property>
+    <property name="ChromeState" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.WebParts.PartChromeState, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <PartChromeState>Normal</PartChromeState>
+      </value>
+    </property>
+    <property name="Height" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.Unit, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      </value>
+    </property>
+    <property name="AllowZoneChange" sensitive="false" scope="1">
+      <value type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <boolean>false</boolean>
+      </value>
+    </property>
+    <property name="ChromeType" sensitive="false" scope="0">
+      <value type="System.Web.UI.WebControls.WebParts.PartChromeType, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <PartChromeType>None</PartChromeType>
+      </value>
+    </property>
+  </part>
+</personalization>

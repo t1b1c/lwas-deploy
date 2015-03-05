@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<access>
+  <screen key="ListaClienti">
+    <role name="devs rate" />
+  </screen>
+  <screen key="ClientProforme">
+    <role name="devs rate" />
+  </screen>
+  <screen key="toata baza">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Pregatiretoata baza">
+    <role name="devs rate" />
+  </screen>
+  <screen key="c">
+    <role name="devs rate" />
+  </screen>
+  <screen key="l">
+    <role name="devs rate" />
+  </screen>
+  <screen key="r5">
+    <role name="devs rate" />
+  </screen>
+  <screen key="rate">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Clienti">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Dealeri">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Contracte">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Aparate">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Accesorii">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Contract">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Proforma">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Incasari">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Livrari">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Plati catre dealer">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Situatia contractului">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Default">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Client">
+    <role name="devs rate" />
+  </screen>
+  <screen key="SituatiaPlatilor">
+    <role name="devs rate" />
+  </screen>
+  <screen key="ComisionRestantDealer">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Situatia contractelor dealerului">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Incasare">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Raport serie aparat">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Situatie client">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Incasari intr-o perioada">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Situatie plati dealer">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Contracte intr-o perioada">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Marfa vanduta">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Contracte reziliate">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Nelivrate">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Contracte in derulare">
+    <role name="devs rate" />
+  </screen>
+  <screen key="Achitate">
+    <role name="devs rate" />
+  </screen>
+</access>

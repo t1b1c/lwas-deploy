@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<types>
+	<type key="FormViewWebPart" name="LWAS.WebParts.FormViewWebPart, LWAS">
+		<property name="ID" />
+		<property name="Title" />
+		<property name="Width" />
+		<property name="Height" />
+    	<property name="AuthorizationFilter" />
+		<property name="Initialization" />
+		<property name="Creation" />
+		<property name="Change" />
+		<property name="Completion" />
+	</type>
+	<type key="GridViewWebPart" name="LWAS.WebParts.GridViewWebPart, LWAS">
+		<property name="ID" />
+		<property name="Title" />
+		<property name="Width" />
+		<property name="Height" />
+    	<property name="AuthorizationFilter" />
+		<property name="Initialization" />
+		<property name="Creation" />
+		<property name="Change" />
+		<property name="Completion" />
+	</type>
+  	<type key="ReportViewWebPart" name="LWAS.WebParts.ReportViewWebPart, LWAS">
+		<property name="ID" />
+		<property name="Title" />
+		<property name="Width" />
+		<property name="Height" />
+		<property name="AuthorizationFilter" />
+		<property name="Initialization" />
+		<property name="Creation" />
+		<property name="Change" />
+		<property name="Completion" />
+  	</type>
+	<type key="SqlDataSourceWebPart" name="LWAS.WebParts.SqlDataSourceWebPart, LWAS">
+		<property name="ID" ValueType="Text" />
+		<property name="Title" ValueType="Text" />
+		<property name="Initialization" />
+		<property name="Creation" />
+		<property name="Change" />
+		<property name="Completion" />
+	</type>
+	<type key="SelectorWebPart" name="LWAS.WebParts.SelectorWebPart, LWAS">
+		<property name="ID" ValueType="Text" />
+		<property name="Title" ValueType="Text" />
+		<property name="Initialization" />
+		<property name="Creation" />
+		<property name="Change" />
+		<property name="Completion" />
+	</type>
+	<type key="PopupTextWebPart" name="LWAS.WebParts.PopupTextWebPart, LWAS">
+		<property name="ID" ValueType="Text" />
+		<property name="Title" ValueType="Text" />
+		<property name="EditorTitle" ValueType="Text" />
+	</type>
+	<type key="BreadcrumbWebPart" name="LWAS.WebParts.BreadcrumbWebPart, LWAS">
+		<property name="ID" />
+		<property name="Separator" />
+		<property name="Key" />
+		<property name="Title" />
+		<property name="ShowRoot" options="False,True" ValueType="Boolean" />
+	</type>
+	<type key="XmlDataSourceWebPart" name="LWAS.WebParts.XmlDataSourceWebPart, LWAS">
+		<property name="ID" />
+		<property name="Title" ValueType="Text" />
+	</type>
+
+	<type key="DataGridViewColumn" name="" watermark="DataMember">
+		<property name="DataMember" ValueType="Text" />
+		<property name="HeaderText" ValueType="Text" />
+		<property name="FormatString" ValueType="Text" />
+	</type>
+	<type key="DropDownListField" name="">
+		<property name="DataMember" ValueType="Text" />
+		<property name="HeaderText" ValueType="Text" />
+		<property name="DataTextField" ValueType="Text" />
+		<property name="DataValueField" ValueType="Text" />
+	</type>
+	<type key="TableRow" name="System.Web.UI.WebControls.TableRow, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+		<property name="Width" ValueType="Text" />
+		<property name="Height" ValueType="Text" />
+		<property name="span" ValueType="Text" />
+		<property name="rowspan" ValueType="Text" />
+		<property name="CssClass" ValueType="Text" />
+	</type>
+	<type key="TableCell" name="System.Web.UI.WebControls.TableCell, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+		<property name="Text" ValueType="Text" />
+		<property name="Width" ValueType="Text" />
+		<property name="Height" ValueType="Text" />
+		<property name="Wrap" options="False,True" ValueType="Boolean" />
+		<property name="HorizontalAlign" options="NotSet,Left,Center,Right,Justify" ValueType="Text" />
+		<property name="VerticalAlign" options="NotSet,Top,Middle,Bottom" ValueType="Text" />
+		<property name="BackColor" ValueType="Text" />
+		<property name="BorderColor" ValueType="Text" />
+		<property name="BorderStyle" options="NotSet,None,Dotted,Dashed,Solid,Double,Groove,Ridge,Inset,Outset" ValueType="Text" />
+		<property name="BorderWidth" ValueType="Text" />
+		<property name="ForeColor" ValueType="Text" />
+		<property name="Font.Name" value="arial,sans-serif" ValueType="Text" />
+		<property name="Font.Bold" options="False,True" ValueType="Boolean" />
+		<property name="Font.Italic" options="False,True" ValueType="Boolean" />
+		<property name="Font.Strikeout" options="False,True" ValueType="Boolean" />
+		<property name="Font.Underline" options="False,True" ValueType="Boolean" />
+		<property name="Font.Size" options="NotSet,Large,Larger,Medium,Small,Smaller,XLarge,XSmall,XXLarge,XXSmall" ValueType="Text" />
+		<property name="CssClass" ValueType="Text" />
+	</type>
+	<type key="selector" name="">
+		<property name="proxy" ValueType="Text" />
+	</type>
+	<type key="Label" name="System.Web.UI.WebControls.Label, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+		<property name="Text" value="Label" ValueType="Text" />
+		<property name="Width" ValueType="Text" />
+		<property name="Height" ValueType="Text" />
+		<property name="BackColor" ValueType="Text" />
+		<property name="Visible" options="True,False" ValueType="Boolean" />
+		<property name="CssClass" ValueType="Text" />
+	</type>
+	<type key="Text" name="LWAS.CustomControls.StyledTextBox, LWAS" readOnly="ReadOnly" readOnlyValue="true" watermark="Text">
+		<property name="Text" ValueType="Text" />
+		<property name="Watermark" ValueType="Text" />
+		<property name="Width" ValueType="Text" />
+		<property name="Height" ValueType="Text" />
+		<property name="TextMode" options="SingleLine,MultiLine" ValueType="Text" />
+		<property name="Visible" options="True,False" ValueType="Boolean" />
+		<property name="ReadOnly" options=",False,True" ValueType="Boolean" />
+		<property name="CssClass" ValueType="Text" />
+	</type>
+	<type key="Date" name="LWAS.CustomControls.MaskedCalendar, LWAS" readOnly="ReadOnly" readOnlyValue="true" watermark="Date">
+		<property name="Text" ValueType="Text" />
+		<property name="Date" ValueType="Date" />
+		<property name="EnableTime" options="False,True" ValueType="Boolean" />
+		<property name="Visible" options="True,False" ValueType="Boolean" />
+		<property name="ReadOnly" options=",False,True" ValueType="Boolean" />
+		<property name="CssClass" ValueType="Text" />
+	</type>
+	<type key="Number" name="LWAS.CustomControls.NumberTextBox, LWAS" readOnly="ReadOnly" readOnlyValue="true" watermark="Text">
+		<property name="NumberType" options="WholeNumber,Money,AutoIncrement,Percentage"  ValueType="Text" />
+		<property name="Text" ValueType="Text" />
+		<property name="UnformatedText" ValueType="Number" />
+		<property name="Decimals" />
+		<property name="Width" />
+		<property name="Visible" options="True,False" ValueType="Boolean" />
+		<property name="ReadOnly" options=",False,True" ValueType="Boolean" />
+		<property name="CssClass" ValueType="Text" />
+	</type>
+	<type key="CheckBox" name="System.Web.UI.WebControls.CheckBox, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" readOnly="Enabled" readOnlyValue="false">
+		<property name="Checked" options=",False,True" ValueType="Boolean" />
+		<property name="Visible" options="True,False" ValueType="Boolean" />
+		<property name="Enabled" options=",True,False" ValueType="Boolean" />
+		<property name="CssClass" ValueType="Text" />
+	</type>
+	<type key="RadioButton" name="System.Web.UI.WebControls.RadioButton, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" readOnly="Enabled" readOnlyValue="false">
+		<property name="GroupName" ValueType="Text" />
+		<property name="Checked" options=",False,True" ValueType="Boolean" />
+		<property name="Visible" options="True,False" ValueType="Boolean" />
+		<property name="Text" ValueType="Text" />
+		<property name="Width" ValueType="Text" />
+		<property name="Enabled" options=",True,False" ValueType="Boolean" />
+		<property name="CssClass" ValueType="Text" />
+	</type>
+	<type key="DropDownList" name="LWAS.CustomControls.StatelessDropDownList, LWAS" readOnly="Enabled" readOnlyValue="false">
+		<property name="SelectedIndex" ValueType="Number" />
+		<property name="SelectedValue" ValueType="Text" />
+		<property name="Width" />
+		<property name="AppendDataBoundItems" options="True,False" ValueType="Boolean" />
+		<property name="CommandName" ValueType="Text" />
+		<property name="DataTextField" ValueType="Text" />
+		<property name="DataValueField" ValueType="Text" />
+		<property name="Items" isList="True" />
+		<property name="Visible" options="True,False" ValueType="Boolean" />
+		<property name="Enabled" options=",True,False" ValueType="Boolean" />
+		<property name="CssClass" ValueType="Text" />
+	</type>
+	<type key="TagsList" name="LWAS.CustomControls.TagsList, LWAS">
+		<property name="SelectedValue" ValueType="Text" />
+		<property name="DisplayMode" options="Text,HyperLink,LinkButton" ValueType="Text" />
+		<property name="Width" />
+		<property name="AppendDataBoundItems" options="True,False" ValueType="Boolean" />
+		<property name="CommandName" ValueType="Text" />
+		<property name="DataTextField" ValueType="Text" />
+		<property name="DataValueField" ValueType="Text" />
+		<property name="Items" isList="True" />
+		<property name="Visible" options="True,False" ValueType="Boolean" />
+		<property name="Enabled" options=",True,False" ValueType="Boolean" />
+		<property name="CssClass" value="tags_list" ValueType="Text" />
+	</type>
+	<type key="Link" name="LWAS.CustomControls.Link, LWAS">
+		<property name="Text" value="Link" ValueType="Text" />
+		<property name="Width" ValueType="Text" />
+		<property name="NavigateUrl" value="#" ValueType="Text" />
+		<property name="PrettyUrl" options="False,True" ValueType="Boolean" />
+		<property name="Parameters" isList="True" />
+		<property name="Visible" options="True,False" ValueType="Boolean" />
+		<property name="CssClass" ValueType="Text" />
+	</type>
+	<type key="LinkCommander" name="System.Web.UI.WebControls.LinkButton, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+		<property name="Text" value="LinkCommander" ValueType="Text" />
+		<property name="Width" ValueType="Text" />
+		<property name="Visible" options="True,False" ValueType="Boolean" />
+		<property name="command" ValueType="Text" />
+		<property name="CssClass" ValueType="Text" />
+	</type>
+	<type key="LinkButton" name="LWAS.CustomControls.LinkButtonEx, LWAS" readOnly="ReadOnly" readOnlyValue="true">
+		<property name="Text" ValueType="Text" />
+		<property name="Width" ValueType="Text" />
+		<property name="Visible" options="True,False" ValueType="Boolean" />
+		<property name="CommandName" value="command" ValueType="Text" />
+		<property name="ReadOnly" options=",True,False" ValueType="Boolean" />
+		<property name="CssClass" ValueType="Text" />
+	</type>
+	<type key="Commander" name="LWAS.CustomControls.OneClickButton, LWAS">
+		<property name="Text" value="Commander" ValueType="Text" />
+		<property name="Width" ValueType="Text" />
+		<property name="Height" ValueType="Text" />
+		<property name="Visible" options="True,False" ValueType="Boolean" />
+		<property name="command" value="command" ValueType="Text" />
+		<property name="Enabled" options=",True,False" ValueType="Boolean" />
+		<property name="CssClass" ValueType="Text" />
+	</type>
+	<type key="Button" name="LWAS.CustomControls.OneClickButton, LWAS">
+		<property name="Text" ValueType="Text" />
+		<property name="Width" ValueType="Text" />
+		<property name="Height" ValueType="Text" />
+		<property name="Visible" options="True,False" ValueType="Boolean" />
+		<property name="CommandName" value="command" ValueType="Text" />
+		<property name="Enabled" options=",True,False" ValueType="Boolean" />
+		<property name="CssClass" ValueType="Text" />
+	</type>
+	<type key="ImageButton" name="System.Web.UI.WebControls.ImageButton, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+	<type key="RedirectButton" name="LWAS.CustomControls.RedirectButton, LWAS">
+		<property name="Text" ValueType="Text" />
+		<property name="Width" ValueType="Text" />
+		<property name="Height" ValueType="Text" />
+		<property name="Visible" options="True,False" ValueType="Boolean" />
+		<property name="Url" ValueType="Text" />
+		<property name="CommandName" value="command" ValueType="Text" />
+		<property name="Enabled" options=",True,False" ValueType="Boolean" />
+		<property name="CssClass" ValueType="Text" />
+	</type>
+	<type key="Hidden" name="System.Web.UI.WebControls.HiddenField, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" watermark="Value">
+		<property name="Value" ValueType="Text" />
+	</type>
+	<type key="Upload" name="LWAS.CustomControls.Uploader, LWAS" readOnly="Enabled" readOnlyValue="false">
+		<property name="FileName" ValueType="Text" />
+		<property name="FilePath" ValueType="Text" />
+		<property name="Enabled" options=",True,False" ValueType="Boolean" />
+		<property name="UploadTo" options="UploadRepo,UserRepo" />
+		<property name="Width" ValueType="Text" />
+		<property name="UseUploadedFileName" options="False,True" ValueType="Boolean" />
+		<property name="RedirectAfterUpload" options="False,True" ValueType="Boolean" />
+	</type>
+	<type key="Lookup" name="LWAS.CustomControls.Lookup, LWAS">
+		<property name="LookFor" />
+		<property name="LookBy" />
+		<property name="LookByValue" />
+	</type>
+	<type key="Menu" name="LWAS.CustomControls.Menu, LWAS" readOnly="Enabled" readOnlyValue="false">
+		<property name="Label" />
+		<property name="ActiveLabel" options="True,False" ValueType="Boolean" />
+		<property name="Width" ValueType="Text" />
+		<property name="Height" ValueType="Text" />
+		<property name="LabelWidth" ValueType="Text" />
+		<property name="LabelHeight" ValueType="Text" />
+		<property name="DisplayMode" options="HyperLink,LinkButton" />
+		<property name="BubblesMilestones" options="False,True" ValueType="Boolean" />
+		<property name="Commands" isList="true" />
+		<property name="Enabled" options=",True,False" ValueType="Boolean" />
+		<property name="Visible" options="True,False" ValueType="Boolean" />
+		<property name="CssClass" ValueType="Text" />
+	</type>
+</types>

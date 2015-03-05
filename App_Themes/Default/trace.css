@@ -1,0 +1,36 @@
+
+/* monitor viewer rules */
+.monitor_viewer_panel
+{
+}
+.monitor_viewer_panel_job
+{
+    background-color: White;
+}
+.monitor_viewer_panel_condition
+{
+    background-color: White;
+    display:block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.monitor_viewer_panel ul
+{
+}
+.monitor_viewer_panel ul li
+{
+}
+.monitor_viewer_panel_transit
+{
+    background-color: transparent;
+    font-weight: bold;
+}
+.monitor_viewer_panel_expression_success
+{
+    background-color: Lime;
+}
+.monitor_viewer_panel_expression_fail
+{
+    background-color: Orange;
+}
+
