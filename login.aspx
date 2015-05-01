@@ -26,8 +26,8 @@
         <recaptcha:RecaptchaControl
             ID="recaptcha"
             runat="server"
-            PublicKey="6LcLPOwSAAAAABYdZOuzEsoliE0xJzQuzbHDL4L2"
-            PrivateKey="6LcLPOwSAAAAAG2By89pxd-llqZAMxc5bvYDa3U_"
+            PublicKey=""
+            PrivateKey=""
             Theme="white"
             />
         </div>

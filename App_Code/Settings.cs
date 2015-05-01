@@ -22,12 +22,14 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
+using System.Web.Caching;
 
 using LWAS.Infrastructure;
 using LWAS.Infrastructure.Routing;
 
 public class Settings
 {
+    static object SyncRoot = new object();
     XDocument settings;
     public Page Page { get; private set; }
     
@@ -82,7 +84,16 @@ public class Settings
     public Settings(Page page)
     {
         this.Page = page;
+        Cache cache = HttpContext.Current.Cache;
         string settings_file = this.Manager.RoutingManager.SettingsRoutes["SETTINGS_FILE"].Path;
-        settings = XDocument.Load(settings_file);
+        lock (SyncRoot)
+        {
+            settings = cache[settings_file] as XDocument;
+            if (null == settings)
+            {
+                settings = XDocument.Load(settings_file);
+                cache.Insert(settings_file, settings, new CacheDependency(settings_file));
+            }
+        }
     }
 }
