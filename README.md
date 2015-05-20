@@ -7,7 +7,7 @@ get it [here](https://github.com/t1b1c/lwas-deploy/archive/master.zip)
 1. IIS 6 or later
 2. ASP.NET 2.0, .NET Framework 3.5
 3. Sql Server 2005 or later
-4. [OpenXML SDK](http://www.microsoft.com/en-us/download/details.aspx?id=30425)
+4. [OpenXML SDK v2.0](http://www.microsoft.com/en-us/download/details.aspx?id=5124)
 5. Your application files - ask them from your developer. You should get an sql script and a zip file with the following structure:
 ```
 |_ config
