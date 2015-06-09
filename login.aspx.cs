@@ -20,32 +20,25 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.IO;
 
 using LWAS.Infrastructure.Security;
 
-using LWAS.Developer;
-
-public partial class DownloadDocx : System.Web.UI.Page
+public partial class login : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        string file = this.Request["file"];
-        if (!String.IsNullOrEmpty(file))
-            SendFile(file);
+        Settings settings = new Settings(this);
+        this.Title = settings.TitleOnPage;
+        Login1.TitleText = settings.TitleOnScreen;
+		
+        Page.Validate();
+        ((TextBox)Login1.FindControl("UserName")).Focus();
     }
-
-    void SendFile(string file)
+    protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
     {
-        Page.Response.Clear();
-
-        Page.Response.ContentType = "application/ms-word";
-        Page.Response.AddHeader("Content-disposition", "attachment; filename=" + file + ".docx");
-
-        file = Path.Combine((new UserData()).RootPath, file + ".docx");
-        if (File.Exists(file))
-            Page.Response.WriteFile(file);
-
-        Response.End();
+        if (!Page.IsValid)
+            e.Authenticated = false;
+        else
+            e.Authenticated = Authenticator.Instance.Verify(this.Login1.UserName, this.Login1.Password);
     }
 }

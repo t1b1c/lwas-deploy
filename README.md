@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+# lwas-deploy
+blue theme website powered by lwas
+=======
 # lwas-deploy
 blue theme web application powered by lwas
 
@@ -120,3 +124,4 @@ Try to use `admin` user with `admin` password. If it fails ask your developer fo
 Your lwas application should load without errors.
 
 
+>>>>>>> origin/master

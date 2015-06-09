@@ -17,6 +17,11 @@
     </ItemTemplate>
     </asp:Repeater>
 </ul>
+<span id="menuHeadSetari" runat="server" class="mainMenuHead">Setari</span>
+<ul id="menuSetari" runat="server" class="mainMenu" style="display:none">
+    <li><a href='<%= ResolveUrl("~/setari/sablon.aspx") %>'>Sabloane</a></li>
+</ul>
 
 <ajax:DropDownExtender runat="server" ID="menu1Ex" BehaviorID="menu1Behaviour" TargetControlID="menuHead1" DropDownControlID="menu1" />
 <ajax:DropDownExtender runat="server" ID="menu2Ex" BehaviorID="menu2Behaviour" TargetControlID="menuHead2" DropDownControlID="menu2" />
+<ajax:DropDownExtender runat="server" ID="menuSetariEx" BehaviorID="menuConfigurariBehaviour" TargetControlID="menuHeadSetari" DropDownControlID="menuSetari" />
