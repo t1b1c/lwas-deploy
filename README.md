@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # lwas-deploy
 blue theme website powered by lwas
 =======
@@ -122,6 +121,3 @@ Some extensions might have a more elaborated deployment, consult your developer 
 Open a web browser and navigate to your web site or application.
 Try to use `admin` user with `admin` password. If it fails ask your developer for credentials to login to your application.
 Your lwas application should load without errors.
-
-
->>>>>>> origin/master
