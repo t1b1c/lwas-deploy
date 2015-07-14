@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 # lwas-deploy
 blue theme website powered by lwas
 =======
 # lwas-deploy
 blue theme web application powered by lwas
 
-get it [here](https://github.com/t1b1c/lwas-deploy/archive/master.zip)
+get it [here](https://github.com/t1b1c/lwas-deploy/releases/latest)
 
 ## Prerequisites
 1. IIS 6 or later
@@ -122,6 +121,3 @@ Some extensions might have a more elaborated deployment, consult your developer 
 Open a web browser and navigate to your web site or application.
 Try to use `admin` user with `admin` password. If it fails ask your developer for credentials to login to your application.
 Your lwas application should load without errors.
-
-
->>>>>>> origin/master
