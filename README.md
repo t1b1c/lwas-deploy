@@ -4,7 +4,7 @@ blue theme website powered by lwas
 # lwas-deploy
 blue theme web application powered by lwas
 
-get it [here](https://github.com/t1b1c/lwas-deploy/archive/master.zip)
+get it [here](https://github.com/t1b1c/lwas-deploy/releases/latest)
 
 ## Prerequisites
 1. IIS 6 or later
