@@ -1,7 +1,4 @@
 # lwas-deploy
-blue theme website powered by lwas
-=======
-# lwas-deploy
 blue theme web application powered by lwas
 
 get it [here](https://github.com/t1b1c/lwas-deploy/releases/latest)
